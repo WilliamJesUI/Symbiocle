@@ -1,0 +1,54 @@
+# ============================================================
+# SYMBIOCLE — Root .gitignore
+# ============================================================
+
+# ---- SECRETS (NEVER commit these) ----
+.env
+.env.local
+.env.production
+.env*.local
+*.pem
+*.key
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# ---- Node / Next.js ----
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Editor ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Logs ----
+*.log
+npm-debug.log*
+
+# ---- Supabase local ----
+supabase/.branches/
+supabase/.temp/
+
+# ---- Misc ----
+*.zip
+recyclers.csv

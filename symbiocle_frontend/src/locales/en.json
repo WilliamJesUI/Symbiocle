@@ -1,0 +1,121 @@
+{
+  "Index": {
+    "meta_title": "Symbiocle | Industrial Symbiosis",
+    "meta_description": "B2B platform for factory waste management and sourcing."
+  },
+  "Navbar": {
+    "about": "About Us",
+    "vision": "Vision & Mission",
+    "partners": "Our Partners",
+    "how_it_works": "How it works",
+    "sign_in": "Sign In",
+    "sign_up": "Sign Up"
+  },
+  "Hero": {
+    "follow_twitter": "Welcome to the Circular Economy",
+    "title": "Transforming Industrial Waste into <important>Valuable Resources</important>.",
+    "description": "The leading B2B platform for industrial symbiosis. Connect with verified factories and recyclers to buy, sell, and manage industrial by-products sustainably.",
+    "primary_button": "Join Symbiocle Today",
+    "secondary_button": "Learn How It Works"
+  },
+  "Sponsors": {
+    "title": "Trusted by Industry Leaders & Factories"
+  },
+  "Features": {
+    "section_subtitle": "Why Symbiocle",
+    "section_title": "Empowering the Circular Economy",
+    "section_description": "Everything you need to turn industrial waste into wealth and achieve your zero-waste goals.",
+    "feature1_title": "Smart Matchmaking",
+    "feature2_title": "F2F Marketplace",
+    "feature3_title": "Real-time Negotiation",
+    "feature4_title": "Verified Partners",
+    "feature5_title": "Impact Tracking",
+    "feature6_title": "Secure Transactions",
+    "feature_description": "Streamline your factory's waste management and raw material sourcing with our intelligent platform."
+  },
+  "Pricing": {
+    "section_subtitle": "Pricing",
+    "section_title": "Simple Plans for Every Factory Scale",
+    "section_description": "Choose the perfect plan to manage your industrial symbiosis operations efficiently.",
+    "button_text": "Get Started"
+  },
+  "PricingPlan": {
+    "free_plan_name": "Starter",
+    "premium_plan_name": "Pro Factory",
+    "enterprise_plan_name": "Enterprise",
+    "free_plan_description": "For small local factories",
+    "premium_plan_description": "For medium to large industries",
+    "enterprise_plan_description": "For multi-plant corporations",
+    "feature_team_member": "{number} User Accounts",
+    "feature_website": "{number} Factory Locations",
+    "feature_storage": "{number} GB Document Storage",
+    "feature_transfer": "Unlimited Transactions",
+    "feature_email_support": "Priority Support",
+    "plan_interval_month": "month",
+    "plan_interval_year": "year",
+    "next_renew_date": "Your plan renews on {date}"
+  },
+  "FAQ": {
+    "step1_title": "Smart Waste Listing",
+    "step1_desc": "Factories list their industrial by-products with detailed specifications. Our system categorizes materials to prepare them for the perfect match.",
+    "step2_title": "AI-Powered Matchmaking",
+    "step2_desc": "Our AI engine analyzes location, capacity, and material compatibility to find the most efficient symbiotic partners.",
+    "step3_title": "Secure Negotiation",
+    "step3_desc": "Connect with verified partners through our integrated chat system to discuss logistics and quality control.",
+    "step4_title": "Finalize & Track Impact",
+    "step4_desc": "Secure your connection and receive contact credentials while tracking your environmental contribution."
+  },
+  "CTA": {
+    "title": "Ready to achieve zero waste?",
+    "description": "Join hundreds of factories already benefiting from industrial symbiosis and reducing their carbon footprint.",
+    "button_text": "Create Your Account"
+  },
+  "Footer": {
+    "product": "Platform",
+    "docs": "Documentation",
+    "blog": "Case Studies",
+    "community": "Network",
+    "company": "About Symbiocle",
+    "terms_of_service": "Terms of Service",
+    "privacy_policy": "Privacy Policy",
+    "footer_text": "© {year} Symbiocle. Driving Industrial Symbiosis."
+  },
+  "ProtectFallback": {
+    "not_enough_permission": "You do not have the permissions to access this factory data."
+  },
+  "SignIn": {
+    "meta_title": "Sign In | Symbiocle",
+    "meta_description": "Access your factory dashboard and manage your materials."
+  },
+  "SignUp": {
+    "meta_title": "Sign Up | Symbiocle",
+    "meta_description": "Register your factory and join the circular economy network."
+  },
+  "DashboardLayout": {
+    "home": "Home",
+    "matches": "Matches",
+    "marketplace": "Marketplace",
+    "settings": "Settings"
+  },
+  "Dashboard": {
+    "meta_title": "Symbiocle Dashboard",
+    "meta_description": "Manage your factory waste and sourcing efficiently."
+  },
+  "DashboardIndex": {
+    "title_bar": "Dashboard",
+    "title_bar_description": "Welcome back to your factory dashboard.",
+    "message_state_title": "Welcome to Symbiocle",
+    "message_state_description": "Start managing your industrial symbiosis operations.",
+    "message_state_button": "Find Matches",
+    "message_state_alternative": "Need help getting started? Check out our quick guide.",
+    "max_message": "Ready to trade materials?"
+  },
+  "UserProfile": {
+    "title_bar": "Account Settings",
+    "title_bar_description": "Manage your personal credentials."
+  },
+  "OrganizationProfile": {
+    "title_bar": "Factory Profile",
+    "title_bar_description": "Update your factory details, capacity, and location."
+  }
+}
