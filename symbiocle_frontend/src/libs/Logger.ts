@@ -1,21 +1,19 @@
-import logtail from '@logtail/pino';
 import pino, { type DestinationStream } from 'pino';
 import pretty from 'pino-pretty';
 
-import { Env } from './Env';
-
 let stream: DestinationStream;
 
-if (Env.LOGTAIL_SOURCE_TOKEN) {
+if (process.env.LOGTAIL_SOURCE_TOKEN) {
+  const logtail = (await import('@logtail/pino')).default;
   stream = pino.multistream([
     await logtail({
-      sourceToken: Env.LOGTAIL_SOURCE_TOKEN,
+      sourceToken: process.env.LOGTAIL_SOURCE_TOKEN,
       options: {
         sendLogsToBetterStack: true,
       },
     }),
     {
-      stream: pretty(), // Prints logs to the console
+      stream: pretty(),
     },
   ]);
 } else {
