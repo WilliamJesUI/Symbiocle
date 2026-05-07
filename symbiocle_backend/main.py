@@ -43,20 +43,6 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# CORS CONFIGURATION BLOCK
-origins = [
-    "http://localhost:3000",      # The standard Next.js local development port
-    "http://127.0.0.1:3000",      # An alternative local development address
-]
-
-# if frontend is on a different port
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,       # Allows requests from the addresses in the 'origins' list
-    allow_credentials=True,      # Allows the frontend to send cookies/auth headers if needed
-    allow_methods=["*"],         # Allows all HTTP methods (GET, POST, PUT, DELETE, etc.)
-    allow_headers=["*"],         # Allows all HTTP headers
-)
 
 # CONNECT TO SUPABASE
 url = os.getenv("SUPABASE_URL")
