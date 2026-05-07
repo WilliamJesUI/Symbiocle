@@ -1,4 +1,4 @@
-export const Logo = (props: {
+export const Logo = (_props: {
   isTextHidden?: boolean;
 }) => (
   <div className="flex items-center text-xl font-semibold">
