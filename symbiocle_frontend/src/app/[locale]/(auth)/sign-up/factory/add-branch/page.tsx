@@ -113,7 +113,7 @@ export default function AddBranchStep() {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) throw new Error('Not signed in');
 
-      const { data, error: insertError } = await supabase
+      const { error: insertError } = await supabase
         .from('Factory')
         .insert({
           owner_id: user.id,
