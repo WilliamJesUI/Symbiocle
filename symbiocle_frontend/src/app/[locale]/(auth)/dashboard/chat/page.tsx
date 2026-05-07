@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { supabase } from '@/libs/Supabase';
 
@@ -13,7 +13,7 @@ const CHAT_TEMPLATES = [
   "We will proceed with the details exactly as specified on the platform."
 ];
 
-export default function FactoryChatPage() {
+function FactoryChatContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const connectionId = searchParams.get('connectionId');
@@ -190,5 +190,13 @@ export default function FactoryChatPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function FactoryChatPage() {
+  return (
+    <Suspense fallback={<div className="flex h-[calc(100vh-120px)] items-center justify-center"><p className="text-sm font-bold text-slate-500">Loading...</p></div>}>
+      <FactoryChatContent />
+    </Suspense>
   );
 }

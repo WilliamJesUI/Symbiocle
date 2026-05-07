@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from 'react'; 
 import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { supabase } from '@/libs/Supabase';
@@ -24,7 +25,7 @@ const CATEGORY_LABELS: Record<string, string> = {
 type WasteRow = { id: string; material: string; quantity_tons_month: number; is_b3: boolean; waste_category: string };
 type FactoryRow = { factory_id: string; factory_name: string };
 
-export default function AddWasteStep() {
+function AddWasteContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const preselectedFactoryId = searchParams.get('factoryId');
@@ -331,3 +332,12 @@ export default function AddWasteStep() {
     </div>
   );
 }
+
+export default function AddWasteStep() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center bg-[#FBFDF9]"><p className="text-sm font-bold text-slate-500">Loading...</p></div>}>
+      <AddWasteContent />
+    </Suspense>
+  );
+}
+
