@@ -27,13 +27,6 @@ type WasteListing = {
   factory_id: string;
 };
 
-type Factory = {
-  factory_id: string;
-  factory_name: string;
-  province: string;
-  city: string;
-  postcode: string | null;
-};
 
 export default function MatchingPage() {
   const router = useRouter();
